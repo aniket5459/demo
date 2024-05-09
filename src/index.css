@@ -1,13 +1,463 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.nav {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1rem;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav ul  {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-top:10px
+}
+
+.nav ul li{
+  padding:20px 35px;
+  border-radius: 35px;
+}
+
+
+.nav ul li a {
+  color:white;
+  border: 1px solid #1C1C1C;
+  border-radius: 35px;
+  padding: 20px 35px;
+  background-color:#1C1C1C ;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  background-color: #4E4E4E;
+  box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+  height: 2rem;
+  margin-left: 2rem;
+}
+
+
+.homepageSection {
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.homepageSection h1{
+  font-size: 50px;
+}
+
+.container {
+  margin-top: 4.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.productSection {
+  padding: 20px;
+  margin-left: 250px;
+  margin-top: -150px;
+  position: relative;
+}
+
+.container img{
+  border-radius: 35px;
+}
+
+.imageSection{
+  position: relative;;
+}
+.imageContainer{
+  position:relative;
+}
+
+.forty{
+  position: absolute;
+  top: 22%;
+  right:80%;
+  box-shadow: 3px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width:280px;
+  height:240px;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+}
+
+.ten{
+  position: absolute;
+  top: 80%;
+  left: -10%;
+  width:210px;
+  height:75px;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  box-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.last{
+  position: absolute;
+  top: 65%;
+  left:48% ;
+  background-color: #002E18;
+  overflow: visible;
+  width:300px;
+  height: 235px;
+  border-radius: 29px;
+  box-shadow: 3px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.last strong{
+  color: white;
+  font-size: 70px;
+  position: relative;
+  left:9%;
+  top: 5%;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.last p{
+  color:#828282 ;
+  position: relative;
+  left: 58%;
+  bottom: 18%;
+  font-size: 22px;
+}
+.last span{
+  color:#828282  ;
+  font-size: 19px;
+  position: relative;
+  bottom: 28%;
+  left: 10%;
+}
+
+.forty strong{
+font-family: Switzer;
+font-size: 48px;
+position: relative;
+top: 22%;
+right: 18%;
+}
+
+.forty p{
+  padding-left: 38px;
+  padding-top: 37px;
+  font-size: 17px;
+  color: #828282;
+}
+
+.ten img{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.ten strong{
+  font-size: 20px;
+  font-family: Manrope;
+  padding-left: 9px;
+}
+
+.ten p{
+  color:#828282;
+position: relative;
+top: -33%;
+left: 34%;
+}
+
+.productSection img{
+margin-top: 50px;
+margin-left: 3px;
+}
+
+.productSection button{
+  color:white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  border-radius: 40px;
+  font-size: 20px;
+  padding-left: 35px;
+}
+
+.buttonContainer{
+  padding-bottom:10px ;
+  position: absolute;
+  top:130%;
+}
+
+.productSection button:hover{
+  background-color: #4E4E4E;
+}
+
+.title{
+  margin-top: 40px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.cancel{
+  right: 0%;
+  top: 3%;
+  left: 95%;
+  position: absolute;
+}
+
+.cancel button{
+  background-color: white;
+  border: none;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: Covered By Your Grace;
+  font-size: 30px;
+  color: #2DA950;
+}
+
+.text2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  font-family: Manrope;
+  font-size: 50px;
+}
+.text3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  font-family: Manrope;
+  font-size: 50px;
+}
+.text4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  font-family: Manrope;
+  font-size: 22px;
+  color: #727272;
+}
+
+.form{
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}
+
+.name input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+  width: 400px;
+  padding: 20px;
+  margin-left: -100px;
+  background-color: #EFEFEF;
+border: none;
+  
+}
+
+.email input{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+  width: 400px;
+  padding: 20px;
+  margin-left: -100px;
+  background-color: #EFEFEF;
+border: none;
+}
+
+.button{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+  width: 400px;
+  padding: 20px;
+  margin-left: -100px;
+border: none;
+}
+
+.error{
+  margin-left: -80px;
+  margin-top: 10px;
+}
+
+.confirm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.redirect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 42%;
+}
+
+.spinnerContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, var(--color-light--2));
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+.footer {
+  background-color: #F5F5F5;
+  color: #1C1C1C;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Manrope;
+  border-radius: 30px;
+  padding: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  text-align: right;
+}
+
+.right a {
+  color:  #1C1C1C;
+  margin-left: 20px;
+  
+}
+
+.container1{
+  background-color: #E8EEE7;
+  padding: 80px;
+  border-radius: 45px;
+  margin-top: 5.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  display: flex;
+  justify-content:space-around;
+  position: relative;
+}
+
+.leftSide{
+  margin-right: 800px;
+
+}
+
+.mind{
+  font-family: Covered By Your Grace;
+  font-size: 35px;
+  color: #9E9D9D;
+  margin-top: 35px;
+  /* margin-left: -60px; */
+}
+
+.question{
+  /* margin-left: 10px; */
+  margin-top: -35px;
+  font-size: 80px;
+  font-family: Manrope;
+}
+
+.imageQuery img{
+  margin-top: 80px;
+  width: 700px;
+  height: 450px;
+}
+
+.doubts{
+  position:absolute;
+  top: 15%;
+  left: 60%;
+  font-size: 28px;
+  display: flex;
+  font-weight: 500;
+  border-bottom: 1px solid #ccc;
+}
+
+.doubts span{
+  margin-left: 450px;
+}
+
+.doubts1{
+  position:absolute;
+  top: 25%;
+  left: 60%;
+  font-size: 28px;
+  display: flex;
+  font-weight: 500;
+  border-bottom: 1px solid #ccc;
+}
+
+.doubts1 span{
+  margin-left: 220px;
+}
+
+.doubts2{
+  position:absolute;
+  top: 40%;
+  left: 60%;
+  font-size: 28px;
+  display: flex;
+  font-weight: 500;
+  /* border-bottom: 1px solid #ccc; */
+}
+.doubts2 span{
+  margin-left: 330px;
+}
+.dropDown p{
+  /* margin-left: 50px; */
+  position:absolute;
+  top: 47%;
+  left: 60%;
+  
 }
